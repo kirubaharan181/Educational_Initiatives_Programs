@@ -1,7 +1,3 @@
-1**.
-
----
-
 # HC 2025-26 Coding Exercises
 
 This repository contains my solutions for the **HC 2025-26 Coding Exercises**.
