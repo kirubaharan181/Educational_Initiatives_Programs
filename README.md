@@ -1,95 +1,100 @@
-HC 2025-26 Coding Exercises
 
-This repository contains my solutions for the HC 2025-26 Coding Exercises.
+# Coding Exercises – HC 2025-26
 
+This repository contains my solutions for the **HC 2025-26 Coding Exercises**.
 It includes:
 
-Exercise 1 – Design Patterns:
-Demonstrations of Behavioral, Creational, and Structural design patterns.
-Example file: CricketApp.java (used to showcase one of the patterns).
+1. **Exercise 1 – Design Patterns:**
+   Demonstrations of Behavioral, Creational, and Structural design patterns.
 
-Exercise 2 – Mini-Project:
-Astronaut Daily Schedule Organizer – a console-based CRUD application that helps astronauts manage daily tasks efficiently.
-Main file: AstronautScheduler.java
+   * Example file: `CricketApp.java` (used to showcase one of the patterns)
 
-Project Structure
+2. **Exercise 2 – Mini-Project:**
+   **Astronaut Daily Schedule Organizer** – a console-based CRUD application that helps astronauts manage daily tasks efficiently.
+
+   * Main file: `AstronautScheduler.java`
+
+---
+
+## 📂 Project Structure
+
+```
 / (root)
  ├── CricketApp.java           # Demonstrates design pattern use case (Exercise 1)
- ├── AstronautScheduler.java   # Main mini-project application (Exercise 2)
+ ├── AstronautScheduler.java   # Main mini-project app (Exercise 2)
  └── README.md                 # Project documentation
+```
 
-1. Astronaut Daily Schedule Organizer
+---
 
-This is a console-based Java application that allows astronauts to:
+## 📝 1. Astronaut Daily Schedule Organizer
 
-Add new tasks with:
+This is a **console-based Java application** that lets astronauts:
 
-Description
+* ➕ Add new tasks with:
 
-Start Time
+  * Description
+  * Start Time
+  * End Time
+  * Priority Level (High / Medium / Low)
+* ➖ Remove existing tasks
+* 👀 View all tasks sorted by start time
+* ⚠️ Prevent overlapping tasks (validation)
+* ✅ Handle errors gracefully (e.g., invalid time, non-existent task)
 
-End Time
+###  Key Features
 
-Priority Level (High / Medium / Low)
+* **Singleton Pattern:** Only one `ScheduleManager` instance manages all tasks.
+* **Factory Pattern:** `TaskFactory` creates Task objects.
+* **Observer Pattern:** Alerts the user if a new task conflicts with existing tasks.
+* **Exception Handling & Logging:** Errors are captured and logged cleanly.
 
-Remove existing tasks
+---
 
-View all tasks sorted by start time
+## 🏏 2. Design Pattern Demonstration (CricketApp)
 
-Prevent overlapping tasks through validation
+`CricketApp.java` is a **lightweight console application** that demonstrates how design patterns (like Factory, Observer, etc.) can be applied in another scenario.
+It is part of **Exercise 1** to showcase creativity in implementing different patterns.
 
-Handle invalid inputs gracefully
+---
 
-Key Features
+## ⚙️ Requirements
 
-Singleton Pattern: Only one ScheduleManager instance manages all tasks.
+* **Language:** Java 17+
+* **IDE/Editor:** IntelliJ IDEA / Eclipse / VS Code (or any Java-capable editor)
+* **Build Tool:** Not required (simple `.java` compilation)
+* **Console:** Application runs entirely in the terminal.
 
-Factory Pattern: TaskFactory is used to create Task objects.
+---
 
-Observer Pattern: Alerts the user if a new task conflicts with existing tasks.
+## ▶️ How to Run
 
-Exception Handling and Logging: Errors are handled cleanly and recorded as needed.
+1. Clone the repository or download the `.java` files.
+2. Open a terminal in the project folder.
+3. Compile the Java files:
 
-2. Design Pattern Demonstration (CricketApp)
+   ```bash
+   javac AstronautScheduler.java
+   javac CricketApp.java
+   ```
+4. Run the desired program:
 
-CricketApp.java is a console application that demonstrates the use of design patterns in another scenario.
-It is part of Exercise 1 to showcase the implementation of different software design patterns.
+   ```bash
+   java AstronautScheduler
+   ```
 
-Requirements
+   or
 
-Java 17 or later
+   ```bash
+   java CricketApp
+   ```
+5. Follow the on-screen menu instructions.
 
-Any Java-compatible IDE or text editor (IntelliJ IDEA, Eclipse, VS Code, etc.)
+---
 
-No build tool required; direct compilation and execution from the terminal
+## 🖥️ Sample Console Interaction – AstronautScheduler
 
-Console-based application
-
-How to Run
-
-Clone the repository or download the .java files.
-
-Open a terminal in the project folder.
-
-Compile the Java files:
-
-javac AstronautScheduler.java
-javac CricketApp.java
-
-
-Run the desired program:
-
-java AstronautScheduler
-
-
-or
-
-java CricketApp
-
-
-Follow the instructions displayed in the console.
-
-Sample Console Interaction – AstronautScheduler
+```
 --- Astronaut Daily Schedule Organizer ---
 1. Add Task
 2. Remove Task
@@ -102,27 +107,34 @@ Enter Start Time (HH:MM): 07:00
 Enter End Time (HH:MM): 08:00
 Enter Priority (High/Medium/Low): High
 Task added successfully. No conflicts.
+```
 
-Assumptions
+---
 
-Time input uses 24-hour format (HH:MM).
+## 📌 Assumptions Made
 
-Tasks are organized for a single day only.
+* Time input uses **24-hour format** (HH:MM).
+* Tasks are for **one day only**.
+* Console input is kept **simple and text-based** for demonstration.
 
-Console input is kept simple and text-based for demonstration purposes.
+---
 
-Code Quality
+## 📚 Design & Code Quality
 
-Adheres to SOLID principles.
+* Follows **SOLID principles**.
+* Uses **design patterns** wherever applicable.
+* Implements **defensive programming** and **validations** to avoid crashes.
+* Code is **modular, readable, and commented** for easier walkthroughs.
 
-Implements Behavioral, Creational, and Structural design patterns where required.
+---
 
-Includes defensive programming and input validation.
+## 🧪 Testing & Validation
 
-Code is modular, readable, and well-commented for easy walkthroughs.
+* Tested against **positive** (valid inputs) and **negative** (invalid/overlapping tasks) cases as described in the original exercise PDF.
+* Verified proper error messages and edge case handling.
 
-Testing
+---
 
-Tested with valid and invalid inputs as outlined in the original problem statement.
 
-Verified that all mandatory requirements and edge cases are handled.
+
+Would you like me to **customize the README further** (for example, adding screenshots of the console output or a section on future enhancements)?
