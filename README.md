@@ -4,13 +4,13 @@ This repository contains my solutions for the **HC 2025-26 Coding Exercises**.
 
 It includes:
 
-1. **Exercise 1 – Design Patterns:**
-   Demonstrations of Behavioral, Creational, and Structural design patterns.
-   Example file: `CricketApp.java` (used to showcase one of the patterns).
-
-2. **Exercise 2 – Mini-Project:**
+1.  **Exercise 1 – Mini-Project:**
    **Astronaut Daily Schedule Organizer** – a console-based CRUD application that helps astronauts manage daily tasks efficiently.
    Main file: `AstronautScheduler.java`
+
+2. **Exercise 2 – Design Patterns:**
+   Demonstrations of Behavioral, Creational, and Structural design patterns.
+   Example file: `CricketApp.java` (used to showcase one of the patterns).
 
 ---
 
